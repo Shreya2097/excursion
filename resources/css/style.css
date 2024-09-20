@@ -1,49 +1,90 @@
-/* CSS for styles.css */
-
-/* Reset some default styles */
+/* Basic reset for padding, margin, and box sizing */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Style for body */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
     color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 600px;
     text-align: center;
-    padding: 50px;
 }
 
-/* Header styles */
 header {
-    background-color: #4CAF50; /* Green background for header */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
 }
 
-/* H1 style */
 header h1 {
-    color: white;
-    font-size: 36px;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
 }
 
-/* Link style */
-header a {
-    color: white;
+header p a {
+    font-size: 1.2rem;
+    color: #007BFF;
     text-decoration: none;
-    font-size: 20px;
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background-color: #333;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+    font-weight: bold;
 }
 
-/* Hover effect for the link */
-header a:hover {
-    background-color: #555;
+header p a:hover {
+    text-decoration: underline;
+}
+
+.intro {
+    margin-bottom: 30px;
+}
+
+.intro h2 {
+    font-size: 1.8rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.coming-soon h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.coming-soon p a {
+    font-size: 1.2rem;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.coming-soon p a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for a responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .intro h2 {
+        font-size: 1.5rem;
+    }
+
+    .coming-soon h3 {
+        font-size: 1.3rem;
+    }
 }
